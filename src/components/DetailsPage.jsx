@@ -36,7 +36,7 @@ const DetailsPage = () => {
 
   return (
     <div
-      className={`w-full h-screen sm:h-[83.5vh] mt-20 overflow-hidden ${
+      className={`w-full h-screen sm:h-[83.6vh] mt-20 overflow-hidden ${
         dark ? "bg-dark-mode-bg" : "bg-light-mode-bg"
       }`}
     >
