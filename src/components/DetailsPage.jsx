@@ -19,6 +19,7 @@ const DetailsPage = () => {
 
   useEffect(() => {
     if (countryData.length > 0) {
+      console.log("running");
       countryData[0].borders?.map((item) =>
         getCountryNameFromCode(item).then((data) => {
           setBorders((prev) => [...prev, data]);
@@ -35,7 +36,7 @@ const DetailsPage = () => {
 
   return (
     <div
-      className={`w-full h-content sm:h-[83.5vh] mt-20 overflow-hidden ${
+      className={`w-full h-screen sm:h-[83.5vh] mt-20 overflow-hidden ${
         dark ? "bg-dark-mode-bg" : "bg-light-mode-bg"
       }`}
     >
@@ -152,7 +153,7 @@ const DetailsPage = () => {
                       dark
                         ? "bg-dark-mode-el"
                         : "bg-light-mode-el text-light-mode-text"
-                    } px-7 py-1 mr-2 shadow-lg cursor-pointer`}
+                    } px-6 py-1 mr-2 shadow-lg`}
                     key={id}
                     onClick={() => navigate(`/detail/${item}`)}
                   >

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Card from "./Card";
 import SearchAndFilter from "./SearchAndFilter";
+import { useTheme } from "../themeContext";
 
 const url = "https://restcountries.com/v3/all";
 
@@ -8,6 +9,7 @@ const HomePage = () => {
   const [countries, setCountries] = useState([]);
   const [specificCountry, setSpecificCountry] = useState("");
   const [continent, setContinent] = useState("");
+  const { dark } = useTheme();
 
   useEffect(() => {
     async function getData() {
@@ -33,7 +35,11 @@ const HomePage = () => {
     : countriesByContinent;
 
   return (
-    <div className="m-12">
+    <div
+      className={`${
+        dark ? "bg-dark-mode-bg" : "bg-light-mode-bg"
+      } m-12 min-h-[86.85dvh]`}
+    >
       <SearchAndFilter
         specificCountry={specificCountry}
         setSpecificCountry={setSpecificCountry}
