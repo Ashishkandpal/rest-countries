@@ -43,8 +43,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [My solution](https://your-solution-url.com)
-- Live Site URL: [Live site](https://your-live-site-url.com)
+- Solution URL: [My solution](https://www.frontendmentor.io/solutions/countries-data-using-api-djkEG2qyjk)
+- Live Site URL: [Live site](https://rest-countries-omega-livid.vercel.app/)
 
 ## My process
 
