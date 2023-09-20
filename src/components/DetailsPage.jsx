@@ -153,7 +153,7 @@ const DetailsPage = () => {
                       dark
                         ? "bg-dark-mode-el"
                         : "bg-light-mode-el text-light-mode-text"
-                    } px-6 py-1 mr-2 shadow-lg`}
+                    } px-6 py-1 mr-2 shadow-lg cursor-pointer`}
                     key={id}
                     onClick={() => navigate(`/detail/${item}`)}
                   >
